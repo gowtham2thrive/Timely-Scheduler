@@ -38,11 +38,6 @@ Educational scheduling is a multi-dimensional puzzle involving conflicting const
 
 ---
 
-## 📸 Visuals
-
-### Dashboard Preview
-![Timely Banner](assets/banner.png)
-
 ### Automated Schedule Output
 ![Sample Timetable](assets/timely-dashboard-preview.png)
 
@@ -75,10 +70,3 @@ To ensure the Web Worker functions correctly due to browser security policies (C
 3.  **Launch via a local server:** Use the **Live Server** extension in VS Code or run `python -m http.server`.
 
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-*Developed by Gowtham Kondapalli — Optimized for Academic Excellence.*
