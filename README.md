@@ -8,8 +8,6 @@
 
 **Timely** is a high-performance, constraint-based scheduling engine designed to automate the complex logistics of academic timetable generation. Developed by **Gowtham Kondapalli**, it leverages client-side background processing to deliver optimized schedules for multiple sections without the need for backend infrastructure.
 
-[**Live Demo 🔗**](https://gowtham2thrive.github.io/Timely/)
-
 ---
 
 ## 🚀 Strategic Overview
@@ -39,7 +37,7 @@ Educational scheduling is a multi-dimensional puzzle involving conflicting const
 ---
 
 ### Automated Schedule Output
-![Sample Timetable](assets/timely-dashboard-preview.png)
+![Sample Timetable](assets/timely-demo.png)
 
 ---
 
