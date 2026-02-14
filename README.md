@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](License.txt)
 
-**Timely** is a high-performance, constraint-based scheduling engine designed to automate the complex logistics of academic timetable generation. Developed by **Gowtham Kondapalli**, it leverages client-side background processing to deliver optimized schedules for multiple sections without the need for backend infrastructure.
+**Timely** is a high-performance, constraint-based scheduling engine designed to automate the complex logistics of academic timetable generation., it leverages client-side background processing to deliver optimized schedules for multiple sections without the need for backend infrastructure.
 
 ---
 
