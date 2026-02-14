@@ -59,11 +59,11 @@ To ensure the Web Worker functions correctly due to browser security policies (C
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/gowtham2thrive/Timely.git](https://github.com/gowtham2thrive/Timely.git)
+    git clone [https://github.com/gowtham2thrive/Timely.git](https://github.com/gowtham2thrive/Timely-Scheduler.git)
     ```
 2.  **Navigate to the directory:**
     ```bash
-    cd Timely
+    cd Timely-Scheduler
     ```
 3.  **Launch via a local server:** Use the **Live Server** extension in VS Code or run `python -m http.server`.
 
