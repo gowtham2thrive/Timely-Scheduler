@@ -1,4 +1,4 @@
-# Timely — Intelligent Timetable Generator
+# Timely | Intelligent Timetable Generator
 
 <p align="center">
   <img src="assets/banner.png" alt="Timely Banner">
