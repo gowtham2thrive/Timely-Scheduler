@@ -1,78 +1,89 @@
-# Timely - Intelligent Timetable Generator
+# Timely — Intelligent Timetable Generator
 
-**Timely** is a powerful, client-side web application designed to automate the complex and time-consuming task of creating academic timetables. Built with pure JavaScript, it uses a sophisticated constraint-based algorithm to generate optimized schedules for multiple sections, respecting a wide array of user-defined rules and preferences.
+<p align="center">
+  <img src="assets/banner.png" alt="Timely Banner">
+</p>
 
-Website Link 🔗:- https://gowtham2thrive.github.io/Timely/
+<p align="center">
+  <img src="https://img.shields.io/github/license/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="License">
+  <img src="https://img.shields.io/github/stars/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Stars">
+  <img src="https://img.shields.io/github/forks/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Forks">
+  <img src="https://img.shields.io/github/issues/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Issues">
+</p>
 
-The entire generation process runs in the user's browser, ensuring data privacy and fast performance without any server-side dependency.
+**Timely** is a high-performance, constraint-based scheduling engine designed to automate the complex logistics of academic timetable generation. Developed by **Gowtham Kondapalli**, it leverages client-side background processing to deliver optimized schedules for multiple sections without the need for backend infrastructure.
 
------
+[**Live Demo 🔗**](https://gowtham2thrive.github.io/Timely/)
+
+---
+
+## 🚀 Strategic Overview
+
+Educational scheduling is a multi-dimensional puzzle involving conflicting constraints: faculty availability, student workload, and pedagogical limits. **Timely** solves this by utilizing a sophisticated assignment algorithm that respects both hard and soft constraints, ensuring a balanced workload for staff and students.
+
+### Technical Pillars:
+* **Constraint-Based Logic:** Automatically resolves scheduling conflicts based on weighted rules, such as maximum subjects per day and consecutive period limits.
+* **Web Worker Implementation:** The generation engine is offloaded to a background thread (`worker.js`), ensuring the UI remains 100% responsive even during heavy computation.
+* **Privacy-First Architecture:** Operates entirely within the browser's sandbox. Data is persisted via `localStorage`, ensuring zero data leakage to external servers.
+* **Professional Output:** Integrated with `pdf-lib` to generate print-ready PDF exports including comprehensive faculty-subject mappings.
+
+---
 
 ## ✨ Key Features
 
-Timely is packed with features to handle the diverse scheduling needs of educational institutions.
+### 🛠️ Configuration & Customization
+* **Dynamic Timeframes:** Set custom periods per day, start times, and durations (30–90 mins).
+* **Smart Breaks:** Configurable lunch break placements that the algorithm automatically respects.
+* **Workload Balancing:** Define global limits for Labs, Activities, and individual Subjects to prevent student burnout.
 
-### Core Engine & Configuration
+### 👨‍🏫 Faculty & Subject Management
+* **Granular Availability:** A dedicated availability matrix for every faculty member, allowing for period-by-period exclusions.
+* **Categorized Learning:** Support for instruction types: **Subject** (standard), **Lab** (multi-period blocks), and **Activity**.
+* **Assignment Preferences:** Priority scheduling for specific sessions based on user-defined day/period preferences.
 
-  * **Constraint-Based Algorithm**: The intelligent core automatically resolves conflicts and schedules classes based on a series of weighted rules.
-  * **Dynamic Timetable Structure**: Easily configure the number of **periods per day**, the **start time**, **period duration**, and the placement of a **lunch break**.
-  * **Web Worker Powered**: The generation algorithm runs in a background thread, ensuring the user interface remains **100% responsive** and never freezes, even with complex schedules.
-  * **Persistent State**: Your entire configuration—faculty, sections, and assignments—is automatically **saved to your browser's local storage**, so you can pick up where you left off at any time.
+---
 
-### Faculty & Subject Management
+## 📸 Visuals
 
-  * **Manage Faculty**: Add, edit, and remove faculty members.
-  * **Categorize Subjects**: Assign courses to faculty under three distinct types: **Subject**, **Lab**, or **Activity**.
-  * **Set Availability**: Define each faculty member's availability with a granular, period-by-period grid for the entire week. The algorithm will never schedule a faculty member during an unavailable slot.
+### Dashboard Preview
+![Timely Banner](assets/banner.png)
 
-### Scheduling & Assignments
+### Automated Schedule Output
+![Sample Timetable](assets/timely-dashboard-preview.png)
 
-  * **Section Management**: Create and manage multiple class sections (e.g., CSE-A, ECE-B).
-  * **Flexible Course Assignments**:
-      * **Subjects/Activities**: Assign a specific number of **hours per week**.
-      * **Labs**: Customize labs with both **periods per session** (e.g., a 2-period block) and the number of **sessions per week**.
-  * **Scheduling Preferences**: For any assigned course, specify a **preferred day and period**. The algorithm will prioritize these preferences to build the ideal schedule.
-  * **Daily Workload Rules**: Set global limits on the maximum number of labs, activities, or occurrences of a single subject that can be scheduled on any given day.
+---
 
-### Output & User Interface
+## 🏗️ Technical Stack
 
-  * **Instant Generation**: Create timetables for all sections with a single click.
-  * **Modern UI**: A clean, intuitive interface with both **light and dark modes** to reduce eye strain.
-  * **Clear Visualization**: View generated timetables in a clean, tabbed layout. The UI provides clear indicators for unassigned classes and partially filled schedules.
-  * **One-Click PDF Export**: Download a professional, print-ready **PDF of any timetable**, complete with a list of assigned faculty and subjects for that section.
+* **Logic:** Vanilla JavaScript (ES6+).
+* **Concurrency:** Web Workers API.
+* **Styling:** CSS3 with variable-based theming (Light/Dark mode).
+* **Document Generation:** PDF-Lib.js.
+* **Persistence:** Web Storage API (Local Storage).
 
------
+---
 
-## 🛠️ Built With
+## 🏁 Getting Started
 
-Timely is built with a focus on performance and accessibility, using modern web technologies without the need for frameworks.
+### Prerequisites
+To ensure the Web Worker functions correctly due to browser security policies (CORS), the project must be served via a local server. Opening the `index.html` file directly from your file system will result in a security error.
 
-  * **HTML5**
-  * **CSS3** (with CSS Variables for theming)
-  * **Vanilla JavaScript (ES6+)**
-  * **PDF-Lib.js** for PDF generation
-  * **Web Workers API** for background processing
-
------
-
-## 🚀 Getting Started
-
-You can run this project directly in your browser. No installation or build steps are required.
-
-### How to Run
-
-Because this project uses a Web Worker for its generation algorithm, you must serve the files from a local web server. Opening the `index.html` file directly from your file system (`file://...`) will result in a security error.
-
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/timely-timetable-generator.git
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/gowtham2thrive/Timely.git](https://github.com/gowtham2thrive/Timely.git)
     ```
-2.  Navigate to the project directory:
-    ```sh
-    cd timely-timetable-generator
+2.  **Navigate to the directory:**
+    ```bash
+    cd Timely
     ```
-3.  Serve the files using a local server. A highly recommended and simple way is with the **Live Server** extension for Visual Studio Code.
-      * Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
-      * Right-click on `index.html` in your VS Code explorer and select "Open with Live Server".
+3.  **Launch via a local server:** Use the **Live Server** extension in VS Code or run `python -m http.server`.
 
-Your browser will open, and the application will be ready to use.
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+*Developed by Gowtham Kondapalli — Optimized for Academic Excellence.*
