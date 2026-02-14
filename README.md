@@ -4,12 +4,7 @@
   <img src="assets/banner.png" alt="Timely Banner">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="License">
-  <img src="https://img.shields.io/github/stars/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Stars">
-  <img src="https://img.shields.io/github/forks/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Forks">
-  <img src="https://img.shields.io/github/issues/gowtham2thrive/Timely?style=flat-square&color=2dd4bf" alt="Issues">
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](License.txt)
 
 **Timely** is a high-performance, constraint-based scheduling engine designed to automate the complex logistics of academic timetable generation. Developed by **Gowtham Kondapalli**, it leverages client-side background processing to deliver optimized schedules for multiple sections without the need for backend infrastructure.
 
