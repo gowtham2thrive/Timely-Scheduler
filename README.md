@@ -37,7 +37,7 @@ Educational scheduling is a multi-dimensional puzzle involving conflicting const
 ---
 
 ### Automated Schedule Output
-![Sample Timetable](assets/timely-demo.png)
+![Demo Timetable](assets/timely-demo.png)
 
 ---
 
